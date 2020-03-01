@@ -1,0 +1,53 @@
+:root {
+  --main-bg-color: brown;
+  /* use with: var(--main-bg-color)*/
+}
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #dfdfdf;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #555;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 10px 10px 00px 00px;
+
+
+
+
+
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    padding: 12px 16px;
+    border-radius: 10px 10px 00px 00px;
+    background: #eeeeee;
+    color: #333;
+    border-bottom: 4px solid #20ff7c;
+
+    background: #eeeeee;
+    box-shadow:  4px 4px 8px #5f5f5f44, 
+                -4px -4px 8px #ffffff44;
+
+  }
+
+  /* Change color on hover */
+  .topnav a:active {
+    padding: 13px 16px;
+    border-radius: 10px 10px 00px 00px;
+    background: #eeeeee;
+    color: #333;
+    border-bottom: 2px solid #10f070;
+
+    box-shadow: inset 4px 4px 8px #cacaca33, 
+    inset -4px -4px 8px #ffffff33;
+
+  }
