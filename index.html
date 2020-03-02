@@ -14,23 +14,23 @@
         <script src="js/auth.js"></script> 
     <div class="topnav">
         <a href="#" style="width: 33.33%;" class="open">Home</a>
-        <a href="#" style="width: 33.33%;">pi-Hole</a>
-        <a href="#" style="width: 33.33%;">Proxy Info</a>
+        <a href="#" style="width: 33.33%;" onclick="leavePage()">pi-Hole</a>
+        <a href="#" style="width: 33.33%;" onclick="leavePage()">Proxy Info</a>
     </div>
 
     <div class="content">
 
-<!-- The Modal -->
-<div id="id01" class="w3-modal">
-    <div class="w3-modal-content">
-      <div class="w3-container">
-        <span onclick="window.location='https://www.google.com'" class="w3-button w3-display-topright">&times;</span>
-        <p style="text-align: middle;"><b>Authentication Portal</b></p>
-        <input type="text" class="passwd" placeholder="Auth Key" id="passwd"> <button class="buttonINLINE noselect" id = "signIn" style="width: 90px;" onclick="authorize()">Sign in</button>
-        <div class="space" style="height: 20px;"></div>
-      </div>
-    </div>
-  </div>
+                    <!-- The Modal -->
+                    <div id="id01" class="w3-modal">
+                        <div class="w3-modal-content">
+                        <div class="w3-container">
+                            <span onclick="window.location='https://www.google.com'" class="w3-button w3-display-topright">&times;</span>
+                            <p style="text-align: middle;"><b>Authentication Portal</b></p>
+                            <input type="password" class="passwd" placeholder="Auth Key" id="passwd" required> <button class="buttonINLINE noselect" id = "signIn" style="width: 90px;" onclick="authorize()">Sign in</button>
+                            <div class="space" style="height: 20px;"></div>
+                        </div>
+                        </div>
+                    </div>
 
             <h2>CSS Template</h2>
             <p id="demo">A topnav, content and a footer.</p>

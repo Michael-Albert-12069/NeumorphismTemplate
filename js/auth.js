@@ -1,6 +1,27 @@
+
+var pswd = "-856091348";
+
+
+var x = document.getElementById('passwd');
+x.setAttribute("type", "password");
+
+
 function authorize(){
-    window.alert(document.getElementById('passwd').value);
+//    window.alert(hash(document.getElementById('passwd').value));
+      if(hash(document.getElementById('passwd').value) == pswd){
+        document.getElementById('id01').style.display='none'; 
+      }
 }
+
+function leavePage(){
+        //    window.alert(hash(document.getElementById('passwd').value));
+              if(hash(document.getElementById('passwd').value) != pswd){
+                window.location = "https://google.com";
+              }
+        
+}
+
+
 
 function hash(string) { 
                   
@@ -16,3 +37,72 @@ function hash(string) {
       
     return hash; 
 } 
+
+//screw you using the console
+
+(function(){
+ 
+  var _z = console;
+  Object.defineProperty( window, "console", {
+		get : function(){
+		    if( _z._commandLineAPI ){
+			throw "screw you using the console";
+		          }
+		    return _z; 
+		},
+		set : function(val){
+		    _z = val;
+		}
+  });
+ 
+})();
+
+function encrypt(str) {
+    var amount = 1;
+	// Wrap the amount
+	if (amount < 0)
+		return caesarShift(str, amount + 26);
+
+	// Make an output variable
+	var output = '';
+
+	// Go through each character
+	for (var i = 0; i < str.length; i ++) {
+
+		// Get the character we'll be appending
+		var c = str[i];
+
+		// If it's a letter...
+		if (c.match(/[a-z]/i)) {
+
+			// Get its code
+			var code = str.charCodeAt(i);
+
+			// Uppercase letters
+			if ((code >= 65) && (code <= 90))
+				c = String.fromCharCode(((code - 65 + amount) % 26) + 65);
+
+			// Lowercase letters
+			else if ((code >= 97) && (code <= 122))
+				c = String.fromCharCode(((code - 97 + amount) % 26) + 97);
+
+		}
+
+		// Append
+		output += c;
+
+	}
+
+	// All done!
+	return output;
+
+}
+
+window.console.log = function(){
+    console.error('Sorry , developers tools are blocked here....');
+    window.console.log = function() {
+        return false;
+    }
+  }
+  
+  console.log('test');	

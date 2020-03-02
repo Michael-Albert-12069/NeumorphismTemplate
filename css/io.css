@@ -58,6 +58,7 @@
 
 
   .passwd{
+    -webkit-text-security: disc;
     cursor: pointer;
     width: 250px;
     font-size: 14px;
