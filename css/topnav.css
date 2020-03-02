@@ -18,11 +18,6 @@
     padding: 14px 16px;
     text-decoration: none;
     border-radius: 10px 10px 00px 00px;
-
-
-
-
-
   }
   
   /* Change color on hover */
@@ -49,5 +44,10 @@
 
     box-shadow: inset 4px 4px 8px #cacaca33, 
     inset -4px -4px 8px #ffffff33;
+  }
 
+  .open{
+    color: #333;
+    background: #f8f8f8;
+    border-radius: 10px 10px 00px 00px;
   }
