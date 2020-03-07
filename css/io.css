@@ -1,78 +1,69 @@
 .button {
+
     cursor: pointer;
-    width:min-content;
+    width:max-content;
     font-size: 14px;
     padding: 12px 14px;
     border-color: #ffffff00;
     border-radius: 7px;
-    background: #f4f4f4;
-    box-shadow:  8px 8px 16px #7a7a7a88, 
-                -8px -8px 16px #ffffff;
+    background: #444;
+    box-shadow:  8px 8px 16px #2a2a2a88, 
+                -8px -8px 16px #5e5e5e88;
     
 
   }
   .button:hover {
     border-color: #20ff7c00;
     border-radius: 7px;
-    background: #f4f4f4;
-    box-shadow:  5px 5px 10px #7a7a7a88, 
-                 -5px -5px 8px #ffffff;
+    background: #444;
+    box-shadow:  5px 5px 10px #2a2a2a, 
+                 -5px -5px 8px #5e5e5e;
   }
   .button:active {
     border-color: #10f07000;
     border-radius: 7px;
-    background: #f4f4f4;
-    box-shadow: inset 8px 8px 7px #7a7a7a44, 
-                inset -8px -8px 7px #fff;
+    background: #444;
+    box-shadow: inset 8px 8px 7px #2a2a2a, 
+                inset -8px -8px 7px #5e5e5e;
   }
 
 
 
-  .buttonINLINE {
-    cursor: pointer;
-    width:min-content;
-    font-size: 14px;
-    padding: 8px 8px;
-    border-color: #ffffff00;
-    border-radius: 7px;
-    background: #f4f4f4;
-    box-shadow:  8px 8px 16px #7a7a7a88, 
-                -8px -8px 16px #ffffff;
-    
 
-  }
-  .buttonINLINE:hover {
-    border-color: #20ff7c00;
-    border-radius: 7px;
-    background: #f4f4f4;
-    box-shadow:  5px 5px 10px #7a7a7a88, 
-                 -5px -5px 8px #ffffff;
-  }
-  .buttonINLINE:active {
-    border-color: #10f07000;
-    border-radius: 7px;
-    background: #f4f4f4;
-    box-shadow: inset 8px 8px 7px #7a7a7a44, 
-                inset -8px -8px 7px #fff;
-  }
+
+
 
 
   .passwd{
     -webkit-text-security: disc;
-    cursor: pointer;
-    width: 250px;
+    cursor: text;
+    width: 75%;
     font-size: 14px;
     padding: 8px 8px;
-    border-color: #ffffff00;
+    border-color: #ffffff99;
     border-radius: 7px;
-    background: #f4f4f4;
-    box-shadow:  8px 8px 16px #7a7a7a88, 
-                -8px -8px 16px #ffffff;
-                box-shadow: inset 8px 8px 7px #7a7a7a44, 
-                inset -8px -8px 7px #fff;
+    background: #222;
+    color: #eee;
+    box-shadow: inset 9px 9px 13px #2e2e2e44, 
+    inset -9px -9px 13px #5a5a5a44;
                 align-self: top;
     
   }
+
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #aaa;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #aaa;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #aaa;
+  }
+
+
 
   .noselect {
     -webkit-touch-callout: none; /* iOS Safari */

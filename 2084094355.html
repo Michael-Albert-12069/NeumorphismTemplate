@@ -6,29 +6,31 @@
         <link rel="stylesheet" type="text/css" href="css/content.css">
         <link rel="stylesheet" type="text/css" href="css/io.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <title>CSS Template</title>
+        <title>Home</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    <body onload="document.getElementById('id01').style.display='block'">
+    <body onload="siteAuth()">
         <script src="js/auth.js"></script>
 
     <div class="content" style="min-height: 90vh;">
-        <div style="height: 10px;"></div>
+        <div style="height: 50px;"></div>
+        <div class="button center" style="width: 75%; height: 100px;"><h2 class="centertext noselect">Pi-Hole</h2></div>
+        <div style="height: 30px;"></div>
 
-        <div class="authWindow center">
-            <h2 class="centertext">Login: </h2>
-            <div style="height: 25px;"></div>
-            <input type="text" placeholder="Username" class="passwd center centertext" id="uname">
-            <div style="height: 10px;"></div>
-            <input type="password" placeholder="Password" class="passwd center centertext" id="passwd" >
-            <div style="height: 15px;"></div>
-            <div class="button center noselect" onclick="authorize()">Sign in</div>
-        </div>
-
+        <div class="button center" style="width: 75%; height: 100px;" onclick="window.alert('42069')"><h2 class="centertext noselect">Davis's Key</h2></div>
 
     </div>
-<!--/admin/index.php?login-->
+
+    <script>
+        function siteAuth(){
+            if(sessionStorage.getItem(2084094355) == -856091348){
+                window.alert("Welcome Home!");
+            } else {
+                window.location = "https://www.google.com";
+            }
+        }
+    </script>
     <div class="footer" style="min-height: 10vh;">
         <p>Designed by: <u>Michael Albert</u></p>
     </div>

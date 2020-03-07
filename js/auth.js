@@ -1,5 +1,9 @@
 
-var pswd = "-856091348";
+var key = "1296513791";
+var passwd;
+var uname;
+
+var authkey;
 
 
 var x = document.getElementById('passwd');
@@ -8,10 +12,22 @@ x.setAttribute("type", "password");
 
 function authorize(){
 //    window.alert(hash(document.getElementById('passwd').value));
-      if(hash(document.getElementById('passwd').value) == pswd){
-        document.getElementById('id01').style.display='none'; 
-      }
+	passwd = document.getElementById('passwd').value;
+	uname = document.getElementById('uname').value;
+
+	authkey = uname + passwd;
+	if(hash(authkey) == key){
+		window.alert("you gucci");
+		window.alert();
+		sessionStorage.setItem(hash(uname), hash(passwd));
+		window.location = hash(uname) + ".html";
+
+	} else {
+		window.alert("you guccin't");
+	}
 }
+//window.alert(sessionStorage.getItem(2084094355));
+
 
 function leavePage(){
         //    window.alert(hash(document.getElementById('passwd').value));
